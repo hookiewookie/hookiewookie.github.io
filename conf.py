@@ -218,6 +218,7 @@ TIMEZONE = "Europe/Berlin"
 # https://www.unicode.org/reports/tr35/tr35-dates.html#Date_Field_Symbol_Table
 # You can also use 'full', 'long', 'medium', or 'short'
 # DATE_FORMAT = 'yyyy-MM-dd HH:mm'
+DATE_FORMAT = 'yyyy-MM-dd'
 
 # Date format used to display post dates, if local dates are used. (translatable)
 # Used by Luxon: https://moment.github.io/luxon/docs/manual/formatting
@@ -294,15 +295,18 @@ COMPILERS = {
 # "TOML": TOML wrapped in "+++"
 # "Pelican": Native markdown metadata or reST docinfo fields. Nikola style for other formats.
 # METADATA_FORMAT = "Nikola"
+METADATA_FORMAT = "YAML"
 
 # Use date-based path when creating posts?
 # Can be enabled on a per-post basis with `nikola new_post -d`.
 # The setting is ignored when creating pages.
 # NEW_POST_DATE_PATH = False
+NEW_POST_DATE_PATH = True
 
 # What format to use when creating posts with date paths?
 # Default is '%Y/%m/%d', other possibilities include '%Y' or '%Y/%m'.
 # NEW_POST_DATE_PATH_FORMAT = '%Y/%m/%d'
+NEW_POST_DATE_PATH_FORMAT = '%Y/'
 
 # If this is set to True, the DEFAULT_LANG version will be displayed for
 # untranslated posts.
@@ -495,6 +499,7 @@ HIDDEN_CATEGORIES = []
 # If ENABLE_AUTHOR_PAGES is set to True and there is more than one
 # author, author pages are generated.
 # ENABLE_AUTHOR_PAGES = True
+ENABLE_AUTHOR_PAGES = False
 
 # Path to author pages. Final locations are:
 # output / TRANSLATION[lang] / AUTHOR_PATH / index.html (list of authors)
@@ -548,6 +553,7 @@ FRONT_INDEX_HEADER = {
 # CREATE_DAILY_ARCHIVE = False
 # Create previous, up, next navigation links for archives
 # CREATE_ARCHIVE_NAVIGATION = False
+CREATE_ARCHIVE_NAVIGATION = True
 # Final locations for the archives are:
 # output / TRANSLATION[lang] / ARCHIVE_PATH / ARCHIVE_FILENAME
 # output / TRANSLATION[lang] / ARCHIVE_PATH / YEAR / index.html
@@ -1376,3 +1382,19 @@ GLOBAL_CONTEXT = {}
 # GLOBAL_CONTEXT as parameter when the template is about to be
 # rendered
 GLOBAL_CONTEXT_FILLER = []
+
+import steffi
+
+# Nikola ruft beim Start standardmäßig Funktionen auf,
+# wenn sie sich an den Post-Lade-Prozess hängen.
+# Am einfachsten triggern wir es, indem wir es beim Einlesen der conf.py registrieren:
+def _run_steffi(sender):
+    steffi.apply_folder_frontmatter_defaults(sender)
+
+# Wir hängen uns an das "site_start" oder nutzen direkt den Aufruf nach dem Scan
+try:
+    from nikola import signals
+    signals.site_started.nect(_run_steffi)
+except ImportError:
+    # Fallback, falls Signale in dieser Version anders liegen:
+    pass

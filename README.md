@@ -23,4 +23,16 @@ on gh pages or similar:
 nikola build
 ```
 
+## blog cheatsheet Nikola
 
+```bash
+nikola new_post -e                  # -e for opening the editor of your choice
+nikola new_post -e -f markdown      # markdown
+```
+
+## Extra Info
+
+Ich habe in `steffi.py` eine Erweiterung, die dafür sorget, dass wenn in `posts/` oder Unterordnern davon eine `frontmatter.default.yaml` liegt, diese in das frontmatter der Posts integriert werden:
+
+* Frontmatter-Settings direkt im Post haben Vorrang
+* `frontmatter.default.yaml` vererbt sich auch in Unterordner (aber je näher dran, desto höherrangig)
