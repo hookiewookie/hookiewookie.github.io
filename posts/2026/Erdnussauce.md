@@ -1,5 +1,7 @@
 ---
 category: recipe
+date: 2026-10-25 11:11:20 UTC+01:00
+title: Erdnussauce
 ---
 
 [neutest](20261025/neutest.md)
