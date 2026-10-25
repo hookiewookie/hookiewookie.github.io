@@ -32,7 +32,7 @@ nikola new_post -e -f markdown      # markdown
 
 ## Extra Info
 
-Ich habe in `steffi.py` eine Erweiterung, die dafür sorget, dass wenn in `posts/` oder Unterordnern davon eine `frontmatter.default.yaml` liegt, diese in das frontmatter der Posts integriert werden:
-
-* Frontmatter-Settings direkt im Post haben Vorrang
-* `frontmatter.default.yaml` vererbt sich auch in Unterordner (aber je näher dran, desto höherrangig)
+* Ich habe in `steffi.py` eine Erweiterung, die dafür sorgt, dass wenn in `posts/` oder Unterordnern davon eine `frontmatter.default.yaml` liegt, diese in das frontmatter der Posts integriert werden:
+  * Frontmatter-Settings direkt im Post haben Vorrang
+  * `frontmatter.default.yaml` vererbt sich auch in Unterordner (aber je näher dran, desto höherrangig)
+* manuell deploy triggern: `git commit --allow-empty -m "Empty-Commit #deploy"`
