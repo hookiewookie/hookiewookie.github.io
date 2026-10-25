@@ -14,6 +14,7 @@ uv pip install ...
 
 # local server with live reload
 nikola auto
+nikola help # for more info
 ```
 
 ### deployment
