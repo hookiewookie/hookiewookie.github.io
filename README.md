@@ -46,3 +46,14 @@ Hint:
 * tags werden auf blogposts zwar angezeigt (nach Ergänzung von `[project.plugins.tags]`in der config), aber nicht anklickbar, Übersichtsseite, muss explizit angelegt werden.
 * [Emoji](https://zensical.org/docs/authoring/icons-emojis/): z.B. [Lucide](https://lucide.dev/icons/)  oder FontAwesome
 * Frontmatter `draft: true` ist nur für Blogposts relevant, ansonsten gilt die Konfig (in meinem Fall Ablage in einem `drafts/` Ordner oder Benennung `*.draft.[de.]md`)
+
+### Drafts
+
+TLDR:
+* setze für Blogposts im Frontmatter `draft: true` setzen (oder verzeichnisweise in der `meta.yml`)
+
+Lange Info:
+* in  `[project]` gesetzt: `draft_docs` auf alles in `draft/` Verzeichnissen oder mit `*.draft.md` Namen
+   * solche sind nicht in Indexseiten verlinkt (egal ob Blogpost oder page), aber über ihre direkte URL erreichbar (`.draft` wird dabei Teil der URL, wenn die Datei `.draft.md` heißt)
+   * sie haben eine fette `DRAFT` Markierung im Content - beim lokalen `serve` funktioniert das, auf GH Pages ist das CSS zerschossen.
+* Blog-Posts können im Frontmatter `draft: true` setzen (oder verzeichnisweise in der `meta.yml`), in Pages hat dies keine Wirkung. Sie sind dann lokal beim `serve` auf Indexseiten mit `DRAFT` markiert (aber nicht direkt auf der content-Seite, da sieht man sie wie "später in echt"), beim Build sind sie nicht verlinkt, aber direkt über ihre URL aufrufbar (mit kaputtem CSS).
