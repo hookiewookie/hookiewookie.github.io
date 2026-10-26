@@ -1,5 +1,13 @@
 # My personal Blog
 
+my markdown powered blog, using [Zensical](https://zensical.org/docs/create-your-site/)
+
+## what I've tried tooo, but did not work for me
+* nikola, pelican: markdown links don't work out of the box
+* mkdocs:1.x - unmaintained, 2.x seems to loose community support because no more plugin support
+* preferring python based tools
+
+
 ## local
 
 ```bash
@@ -7,7 +15,7 @@
 uv venv
 source .venv/bin/activate
 uv pip install -r requirements
-nikola init . # or: uv run nikola ...
+zensical new .
 
 # to upgrade
 uv pip install ...

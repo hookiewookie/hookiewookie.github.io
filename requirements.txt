@@ -1,1 +1,2 @@
-Nikola[extras]
+zensical
+zensical-i18n
