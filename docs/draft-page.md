@@ -2,6 +2,8 @@
 draft: true
 ---
 
+This article has a `draft: true` frontmatter. 
+
 # Page with draft frontmatter
 
 # other  drafts
