@@ -18,6 +18,12 @@ copyright = "Copyright &copy; 2026 Steffi"
 
 # extra_css = ["stylesheets/extra.css"]
 # extra_javascript = ["javascripts/extra.js"]
+use_directory_urls = false
+draft_docs = """
+drafts/
+*.draft.md
+*.draft.de.md
+"""
 
 [project.plugins.blog]
 [project.plugins.tags]

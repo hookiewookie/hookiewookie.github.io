@@ -21,8 +21,12 @@ zensical new .
 uv pip install ...
 
 # local server with live reload
-zensical serve
-zensical-i18n serve
+[uv run] zensical serve
+[uv run] zensical-i18n serve [--lang de]
+
+# build
+[uv run] zensical build --clean
+[uv run] zensical-i18n build --clean
 ```
 
 Hint:
@@ -30,7 +34,7 @@ Hint:
 
 ## Extra Info
 
-* ich nutze `zensical-i18n` damit die Site Multilanguage wird.
+* ich nutze [`zensical-i18n`](https://github.com/hsandmann/zensical-i18n) damit die Site Multilanguage wird.
   * alles bleibt "normal", englisch ist default
   * wenn eine extra deutsche Übersetzung dazukommt, dann Dateiendung `.de.md` statt `.md`
   * extra pip Paket und bisschen Erweiterung der [zensical.toml](zensical.toml).
