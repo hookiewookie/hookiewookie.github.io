@@ -50,10 +50,11 @@ Hint:
 ### Drafts
 
 TLDR:
-* setze für Blogposts im Frontmatter `draft: true` setzen (oder verzeichnisweise in der `meta.yml`)
+* setze für Blogposts im Frontmatter `draft: true` setzen (oder verzeichnisweise in der `meta.yml`), das funktioniert zuverlässig
 
 Lange Info:
 * in  `[project]` gesetzt: `draft_docs` auf alles in `draft/` Verzeichnissen oder mit `*.draft.md` Namen
-   * solche sind nicht in Indexseiten verlinkt (egal ob Blogpost oder page), aber über ihre direkte URL erreichbar (`.draft` wird dabei Teil der URL, wenn die Datei `.draft.md` heißt)
-   * sie haben eine fette `DRAFT` Markierung im Content - beim lokalen `serve` funktioniert das, auf GH Pages ist das CSS zerschossen.
+   * solche PAGES sind nicht in Indexseiten verlinkt, aber über ihre direkte URL erreichbar (`.draft` wird dabei Teil der URL, wenn die Datei `.draft.md` heißt)
+   * solche BLOGPOSTS sind im `serve` Modus auf Blogindexseiten ohne Draft-Markierung verlinkt
+   * sie haben eine fette `DRAFT` Markierung im Content - beim lokalen `serve` funktioniert das, auf GH Pages ist das CSS zerschossen, oder es kommt 404.
 * Blog-Posts können im Frontmatter `draft: true` setzen (oder verzeichnisweise in der `meta.yml`), in Pages hat dies keine Wirkung. Sie sind dann lokal beim `serve` auf Indexseiten mit `DRAFT` markiert (aber nicht direkt auf der content-Seite, da sieht man sie wie "später in echt"), beim Build sind sie nicht verlinkt, aber direkt über ihre URL aufrufbar (mit kaputtem CSS).
