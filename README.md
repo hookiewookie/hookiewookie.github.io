@@ -39,4 +39,5 @@ Hint:
   * wenn eine extra deutsche Übersetzung dazukommt, dann Dateiendung `.de.md` statt `.md`
   * extra pip Paket und bisschen Erweiterung der [zensical.toml](zensical.toml).
   * der Befehl `[uv run] zensical` wird ersetzt durch `[uv run] zensical-i18n`, auch im Github Workflow
-* Giscus Kommentare: [comments partial](overrides/partials/comments.html) und [giscus.json](giscus.json) (Interface nur englisch)
+  * > [!NOTE] Frontmatter Metadaten in jeder Übersetzung separat pflegen
+* [Giscus](https://giscus.app/) Kommentare: [comments partial](overrides/partials/comments.html) und [giscus.json](giscus.json) (Interface nur englisch)

@@ -26,11 +26,12 @@ drafts/
 """
 
 [project.plugins.blog]
+[project.plugins.meta] # meta.yml for folder-global frontmatter configuration
 [project.plugins.tags]
 
 [project.theme]
 # variant = "classic"
-# custom_dir = "overrides"
+custom_dir = "overrides" # need for giscus comments
 # favicon = "images/favicon.png"
 language = "en"
 features = [

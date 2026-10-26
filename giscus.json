@@ -1,7 +1,7 @@
 {
-  "_____origins": ["https://steffiland.github.io"],
-  "_____origins": ["https://hookiewookie.com"],
-  "_____origins": ["https://www.hookiewookie.com"],
-  "_____originsRegex": ["http://localhost:[0-9]+"],
+  "origins": ["https://steffiland.github.io"],
+  "origins": ["https://hookiewookie.com"],
+  "origins": ["https://www.hookiewookie.com"],
+  "originsRegex": ["http://localhost:[0-9]+"],
   "defaultCommentOrder": "newest"
 }
