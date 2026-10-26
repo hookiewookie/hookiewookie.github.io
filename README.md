@@ -1,6 +1,6 @@
 # My personal Blog
 
-my markdown powered blog, using [Zensical](https://zensical.org/docs/create-your-site/)
+my markdown powered blog, using [Zensical](https://zensical.org/docs/create-your-site/), the `mkdocs`successor.
 
 ## what I've tried tooo, but did not work for me
 * nikola, pelican: markdown links don't work out of the box
@@ -21,26 +21,18 @@ zensical new .
 uv pip install ...
 
 # local server with live reload
-nikola auto
-nikola help # for more info
+zensical serve
+zensical-i18n serve
 ```
 
-### deployment
-on gh pages or similar:
-```bash
-nikola build
-```
-
-## blog cheatsheet Nikola
-
-```bash
-nikola new_post -e                  # -e for opening the editor of your choice
-nikola new_post -e -f markdown      # markdown
-```
+Hint:
+*  20261025 use command `zensical-i18n` instead of `zensical` for everything, until pugins are fully supported
 
 ## Extra Info
 
-* Ich habe in `steffi.py` eine Erweiterung, die dafür sorgt, dass wenn in `posts/` oder Unterordnern davon eine `frontmatter.default.yaml` liegt, diese in das frontmatter der Posts integriert werden:
-  * Frontmatter-Settings direkt im Post haben Vorrang
-  * `frontmatter.default.yaml` vererbt sich auch in Unterordner (aber je näher dran, desto höherrangig)
-* manuell deploy triggern: `git commit --allow-empty -m "Empty-Commit #deploy"`
+* ich nutze `zensical-i18n` damit die Site Multilanguage wird.
+  * alles bleibt "normal", englisch ist default
+  * wenn eine extra deutsche Übersetzung dazukommt, dann Dateiendung `.de.md` statt `.md`
+  * extra pip Paket und bisschen Erweiterung der [zensical.toml](zensical.toml).
+  * der Befehl `[uv run] zensical` wird ersetzt durch `[uv run] zensical-i18n`, auch im Github Workflow
+* Giscus Kommentare: [comments partial](overrides/partials/comments.html) und [giscus.json](giscus.json) (Interface nur englisch)
