@@ -18,16 +18,18 @@ copyright = "Copyright &copy; 2026 Steffi"
 
 # extra_css = ["stylesheets/extra.css"]
 # extra_javascript = ["javascripts/extra.js"]
-use_directory_urls = false
+use_directory_urls = true
 draft_docs = """
 drafts/
 *.draft.md
 *.draft.de.md
 """
 
-[project.plugins.blog]
+
+
 [project.plugins.meta] # meta.yml for folder-global frontmatter configuration
 [project.plugins.tags]
+listings = true
 
 [project.theme]
 # variant = "classic"
@@ -158,3 +160,22 @@ name = "Deutsch"
 [project.plugins.i18n.languages.nav_translations]
 #"Get started" = "Comece aqui"
 #"Guide" = "Guia"
+
+############################ tags
+
+[project.extra.tags]
+# assign identifiers to tags
+recipe = "recipe"
+recipes = "recipe"
+Rezept = "recipe"
+
+[project.theme.icon.tag]
+# assign icons to tag identifiers
+default = "lucide/hash"
+recipe = "lucide/utensils"
+
+############################# blog
+
+[project.plugins.blog]
+# see https://squidfunk.github.io/mkdocs-material/plugins/blog/
+post_url_date_format =  "yyyy"

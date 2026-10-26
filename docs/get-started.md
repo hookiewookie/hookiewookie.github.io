@@ -2,6 +2,9 @@
 icon: lucide/moon
 draft: true
 comments: true
+tags:
+  - test
+  - markdown
 ---
 
 # Getting started DRAFT
