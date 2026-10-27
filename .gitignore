@@ -20,15 +20,15 @@ ehthumbs.db
 *.tmp
 
 # obsidian: see https://kristoffer.dev/~/writing/obsidian-gitignore/
-## V1: simple and strict
+## V1: simple and strict: exclude all obsidian stuff
 #.obsidian/
 #.trash/
 
-## V2: fine grained
+## V2: fine grained: sync obsidian settings, but no caches
 .trash/
-.obsidian/cache/
-.obsidian/workspace*
-.obsidian/updates.json
-.obsidian/plugins/*/cache/
-.obsidian/plugins/*/.cache/
-.obsidian/plugins/*/node_modules/
+**/.obsidian/cache/
+**/.obsidian/workspace*
+**/.obsidian/updates.json
+**/.obsidian/plugins/*/cache/
+**/.obsidian/plugins/*/.cache/
+**/.obsidian/plugins/*/node_modules/
