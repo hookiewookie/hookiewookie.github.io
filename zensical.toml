@@ -11,7 +11,7 @@ repo_url = "https://github.com/steffiland/hookiewookie"
 # repo_name = "user/repo"
 # edit_uri = "edit/main/docs/"
 
-# wir nutzen lieber die automatisch erzeugte Navigation
+# we prefer atogenerated navigation
 #nav = [
 #  { "Get started" = "index.md" },
 #  { "Markdown in 5min" = "markdown.md" },
@@ -19,7 +19,8 @@ repo_url = "https://github.com/steffiland/hookiewookie"
 
 # extra_css = ["stylesheets/extra.css"]
 # extra_javascript = ["javascripts/extra.js"]
-use_directory_urls = true
+use_directory_urls = true # only for pages, not valid for blog/posts
+
 draft_docs = """
 drafts/
 *.draft.md
@@ -64,6 +65,8 @@ features = [
   "search.highlight",
   # "toc.follow",
   # "toc.integrate",
+  #"content.action.edit", # Github Link to edit this page
+  "content.action.view", # Github Link to View source of this page
 ]
 
 # logo = "assets/logo.png"
