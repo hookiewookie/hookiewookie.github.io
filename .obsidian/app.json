@@ -2,7 +2,7 @@
   "showLineNumber": true,
   "newLinkFormat": "relative",
   "useMarkdownLinks": true,
-  "showUnsupportedFiles": true,
+  "showUnsupportedFiles": false,
   "promptDelete": true,
   "alwaysUpdateLinks": true,
   "newFileLocation": "folder",
