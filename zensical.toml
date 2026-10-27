@@ -7,7 +7,7 @@ site_author = "Steffi"
 
 copyright = "Copyright &copy; 2026 Steffi"
 
-#repo_url = "https://github.com/steffiland/hookiewookie"
+repo_url = "https://github.com/steffiland/hookiewookie"
 # repo_name = "user/repo"
 # edit_uri = "edit/main/docs/"
 

@@ -1,1 +1,0 @@
-This article is in a folder with a `meta.yml` containing `draft: true`.
