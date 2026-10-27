@@ -36,10 +36,12 @@ Hint:
 
 * ich nutze [`zensical-i18n`](https://github.com/hsandmann/zensical-i18n) damit die Site Multilanguage wird.
   * alles bleibt "normal", englisch ist default
-  * wenn eine extra deutsche Übersetzung dazukommt, dann Dateiendung `.de.md` statt `.md`
   * extra pip Paket und bisschen Erweiterung der [zensical.toml](zensical.toml).
+  * wenn eine extra deutsche Übersetzung dazukommt, dann Dateiendung `.de.md` statt `.md` und gleicher Basename. Ein artikel kann auch nur auf deutsch verfügbar sein, aber auf englisch nicht
   * der Befehl `[uv run] zensical` wird ersetzt durch `[uv run] zensical-i18n`, auch im Github Workflow
   * > [!NOTE] Frontmatter Metadaten in jeder Übersetzung separat pflegen
+	  * sprachspezifischer `draft` möglich
+	  * `title` kommt eh aus der 1. Überschrift
 * [Giscus](https://giscus.app/) Kommentare: [comments partial](overrides/partials/comments.html) und [giscus.json](giscus.json) (Interface nur englisch)
 
 * im Blog funktionieren Kategorien - es werden automatisch Übersichtsseiten generiert, anklickbare Links zur Kategorie im Blogbeitrag
