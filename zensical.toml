@@ -183,3 +183,13 @@ recipe = "lucide/utensils"
 [project.plugins.blog]
 # see https://squidfunk.github.io/mkdocs-material/plugins/blog/
 post_url_date_format =  "yyyy"
+
+# enable RSS and limit it to blog posts 
+[project.plugins.rss]
+match_path = "blog/posts/*"
+use_git = true   # true by default; git fallback when meta key is missing  
+  
+[plugins.rss.date_from_meta]  
+as_creation = "date.created"   # front matter first  
+as_update = "date.updated"     # front matter first, git fallback via use_git
+
