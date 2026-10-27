@@ -50,11 +50,17 @@ Hint:
 ### Drafts
 
 TLDR:
-* setze für Blogposts im Frontmatter `draft: true` setzen (oder verzeichnisweise in der `meta.yml`), das funktioniert zuverlässig
+* for blogposts set `draft: true` setzen (`meta.yml` works, too).
 
-Lange Info:
-* in  `[project]` gesetzt: `draft_docs` auf alles in `draft/` Verzeichnissen oder mit `*.draft.md` Namen
-   * solche PAGES sind nicht in Indexseiten verlinkt, aber über ihre direkte URL erreichbar (`.draft` wird dabei Teil der URL, wenn die Datei `.draft.md` heißt)
-   * solche BLOGPOSTS sind im `serve` Modus auf Blogindexseiten ohne Draft-Markierung verlinkt
-   * sie haben eine fette `DRAFT` Markierung im Content - beim lokalen `serve` funktioniert das, auf GH Pages ist das CSS zerschossen, oder es kommt 404.
-* Blog-Posts können im Frontmatter `draft: true` setzen (oder verzeichnisweise in der `meta.yml`), in Pages hat dies keine Wirkung. Sie sind dann lokal beim `serve` auf Indexseiten mit `DRAFT` markiert (aber nicht direkt auf der content-Seite, da sieht man sie wie "später in echt"), beim Build sind sie nicht verlinkt, aber direkt über ihre URL aufrufbar (mit kaputtem CSS oder 404).
+Long:
+* in  `[project]` settings: [`draft_docs`](https://zensical.org/docs/setup/basics/?h=draft#draft_docs) match everything in `draft/` dirs oder with `*.draft.md` names
+   * such pages/posts are not published or auto-linked during `zensical build` process, when trying to access them directly via URL, you'll get a 404.
+   * `serve` mode:
+	   * PAGES are not linked in automatic navigation, but can be opened by URL (a filename part `.draft` also becomes part of the URL)
+	   * BLOGPOSTS are linked in the blog index without _draft_ marker  (considering the fact they are linked as a bug, but it's useful)
+	   * content view will contain a _draft_ marker
+* frontmatter setting `draft: true` (directly or via `meta.yml` in containing folder or parent polder). 
+	* frontmatter setting has no effect for pages, only for blog posts.
+	* blog posts can have a frontmatter 
+	* during `serve`, blog posts will get a _draft_ marker on index pages, but not in their content view.
+	* after `build`, blog posts with frontmatter draft won't be published..
