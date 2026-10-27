@@ -37,7 +37,9 @@ Hint:
 * ich nutze [`zensical-i18n`](https://github.com/hsandmann/zensical-i18n) damit die Site Multilanguage wird.
   * alles bleibt "normal", englisch ist default
   * extra pip Paket und bisschen Erweiterung der [zensical.toml](zensical.toml).
-  * wenn eine extra deutsche Übersetzung dazukommt, dann Dateiendung `.de.md` statt `.md` und gleicher Basename. Ein artikel kann auch nur auf deutsch verfügbar sein, aber auf englisch nicht
+  * wenn eine extra deutsche Übersetzung dazukommt, dann Dateiendung `.de.md` statt `.md` und gleicher Basename. 
+	  * Ein Artikel kann auch nur auf deutsch verfügbar sein, aber auf englisch nicht
+	  * Wenn sich der generierte [Titel](https://zensical.org/docs/authoring/markdown/?h=title#page-title) in den Sprachen unterscheidet, weil z.B. `title` gesetzt ist, oder eine H1-Heading am anfang des Artikels auftaucht, erscheint der Artikel in der non-default Sprache doppelt auf den Indexseiten.
   * der Befehl `[uv run] zensical` wird ersetzt durch `[uv run] zensical-i18n`, auch im Github Workflow
   * > [!NOTE] Frontmatter Metadaten in jeder Übersetzung separat pflegen
 	  * sprachspezifischer `draft` möglich
