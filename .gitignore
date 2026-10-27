@@ -1,7 +1,34 @@
-.doit.db*
+# python stuff
 __pycache__/
-cache/
-output/
-.obsidian/
+.cache/
+
+# zensical/mkdocs tmp stuff
+.doit.db*
 site/
 .zensical-i18n
+output/
+
+# OS and editor clutter
+.DS_Store
+._*
+Thumbs.db
+ehthumbs.db
+.Spotlight-V100
+.Trashes
+*.swp
+*.swo
+*.tmp
+
+# obsidian: see https://kristoffer.dev/~/writing/obsidian-gitignore/
+## V1: simple and strict
+#.obsidian/
+#.trash/
+
+## V2: fine grained
+.trash/
+.obsidian/cache/
+.obsidian/workspace*
+.obsidian/updates.json
+.obsidian/plugins/*/cache/
+.obsidian/plugins/*/.cache/
+.obsidian/plugins/*/node_modules/
