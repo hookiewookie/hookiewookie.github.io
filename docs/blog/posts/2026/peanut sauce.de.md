@@ -5,8 +5,8 @@ date: 2026-10-25
 tags:
   - recipes
 ---
+# Erdnusssoße superlecker
 
-Rezept für superlecker Erdnusssauce:
 
 - 1 kleine Zwiebel gewürfelt anschwitzen in Rapsöl
 - 1 Dose Kokosmilch,
