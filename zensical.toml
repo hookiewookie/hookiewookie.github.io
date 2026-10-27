@@ -10,7 +10,6 @@ copyright = "Copyright &copy; 2026 Steffi"
 repo_url = "https://github.com/steffiland/hookiewookie"
 repo_name = "steffiland/hookiewookie"
 edit_uri = "edit/main/docs/"
-docs_dir = "hw-blog"
 # we prefer atogenerated navigation
 #nav = [
 #  { "Get started" = "index.md" },
