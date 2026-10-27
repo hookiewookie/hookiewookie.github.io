@@ -1,0 +1,16 @@
+{
+  "showLineNumber": true,
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true,
+  "showUnsupportedFiles": true,
+  "promptDelete": true,
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "docs/blog/posts/drafts",
+  "attachmentFolderPath": "./",
+  "userIgnoreFilters": [
+    "site/",
+    "overrides/",
+    "overrides/*"
+  ]
+}

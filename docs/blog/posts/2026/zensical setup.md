@@ -5,15 +5,16 @@ category:
 ---
 # My Blogging decision and setup as of October 2026
 
-After some research and testing, my markdown powered blog is now powered by [Zensical](https://zensical.org/docs/create-your-site/), the `mkdocs`successor.
+After some research and testing, my blog is now powered by [Zensical](https://zensical.org/docs/create-your-site/), the `mkdocs`successor.
 
 Here I am writing about the Why and How.
 <!-- more -->
 ## my needs
-* static site generator (simple & secure, no PHP, not databases)
+* markdown based static site generator (simple & secure, no PHP, not databases)
 * looking good by default
 * easy and uncomplicated usage
 * preferably python powered, although this is not a must
+* FOSS
 * I want to use Obsidian for writing: what looks good on my system (or on my mobile), should also look good after publishing
 * multilanguage would be really nice
 * I want to integrate my crochet patterns from [Ravelry](https://www.ravelry.com/designers/hookiewookie) for sale in the future. I know that this works with SSGs because I tested it with mkdocs in the past.
