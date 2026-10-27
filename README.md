@@ -50,17 +50,17 @@ Hint:
 ### Drafts
 
 TLDR:
-* for blogposts set `draft: true` setzen (`meta.yml` works, too).
+* for blogposts, put them into a `drafts/` folder containing a `meta.yml` file with  `draft: true` frontmatter. Move them out, when finished.
+* pages: put into a `drafts/` folder or configure a `not_in_nav` matching for hidden access after `build`.
 
 Long:
-* in  `[project]` settings: [`draft_docs`](https://zensical.org/docs/setup/basics/?h=draft#draft_docs) match everything in `draft/` dirs oder with `*.draft.md` names
+* in  `[project]` settings: I configured [`draft_docs`](https://zensical.org/docs/setup/basics/?h=draft#draft_docs) to match everything in `draft/` dirs oder with `*.draft.md` names
    * such pages/posts are not published or auto-linked during `zensical build` process, when trying to access them directly via URL, you'll get a 404.
    * `serve` mode:
 	   * PAGES are not linked in automatic navigation, but can be opened by URL (a filename part `.draft` also becomes part of the URL)
-	   * BLOGPOSTS are linked in the blog index without _draft_ marker  (considering the fact they are linked as a bug, but it's useful)
+	   * BLOGPOSTS are linked in the blog index without _draft_ marker  (considering the fact they are linked as a bug, but it's useful and convenient)
 	   * content view will contain a _draft_ marker
 * frontmatter setting `draft: true` (directly or via `meta.yml` in containing folder or parent polder). 
 	* frontmatter setting has no effect for pages, only for blog posts.
-	* blog posts can have a frontmatter 
 	* during `serve`, blog posts will get a _draft_ marker on index pages, but not in their content view.
-	* after `build`, blog posts with frontmatter draft won't be published..
+	* after `build`, blog posts with frontmatter draft won't be published.
