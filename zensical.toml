@@ -8,8 +8,8 @@ site_author = "Steffi"
 copyright = "Copyright &copy; 2026 Steffi"
 
 repo_url = "https://github.com/steffiland/hookiewookie"
-# repo_name = "user/repo"
-# edit_uri = "edit/main/docs/"
+repo_name = "steffiland/hookiewookie"
+edit_uri = "edit/main/docs/"
 
 # we prefer atogenerated navigation
 #nav = [
@@ -65,7 +65,7 @@ features = [
   "search.highlight",
   # "toc.follow",
   # "toc.integrate",
-  #"content.action.edit", # Github Link to edit this page
+  "content.action.edit", # Github Link to edit this page
   "content.action.view", # Github Link to View source of this page
 ]
 
