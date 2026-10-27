@@ -1,6 +1,6 @@
-# My personal Blog
+# setting up a personal Blog
 
-my markdown powered blog, using [Zensical](https://zensical.org/docs/create-your-site/), the `mkdocs`successor.
+After several my markdown powered blog, using [Zensical](https://zensical.org/docs/create-your-site/), the `mkdocs`successor.
 
 ## what I've tried tooo, but did not work for me
 * nikola, pelican: markdown links don't work out of the box
@@ -34,22 +34,27 @@ Hint:
 
 ## Extra Info
 
-* ich nutze [`zensical-i18n`](https://github.com/hsandmann/zensical-i18n) damit die Site Multilanguage wird.
-  * alles bleibt "normal", englisch ist default
-  * extra pip Paket und bisschen Erweiterung der [zensical.toml](zensical.toml).
-  * wenn eine extra deutsche Übersetzung dazukommt, dann Dateiendung `.de.md` statt `.md` und gleicher Basename. 
-	  * Ein Artikel kann auch nur auf deutsch verfügbar sein, aber auf englisch nicht
-	  * Wenn sich der generierte [Titel](https://zensical.org/docs/authoring/markdown/?h=title#page-title) in den Sprachen unterscheidet, weil z.B. `title` gesetzt ist, oder eine H1-Heading am anfang des Artikels auftaucht, erscheint der Artikel in der non-default Sprache doppelt auf den Indexseiten.
-  * der Befehl `[uv run] zensical` wird ersetzt durch `[uv run] zensical-i18n`, auch im Github Workflow
-  * > [!NOTE] Frontmatter Metadaten in jeder Übersetzung separat pflegen
-	  * sprachspezifischer `draft` möglich
-	  * `title` kommt eh aus der 1. Überschrift
-* [Giscus](https://giscus.app/) Kommentare: [comments partial](overrides/partials/comments.html) und [giscus.json](giscus.json) (Interface nur englisch)
+### Multilanguage
 
-* im Blog funktionieren Kategorien - es werden automatisch Übersichtsseiten generiert, anklickbare Links zur Kategorie im Blogbeitrag
-* tags werden auf blogposts zwar angezeigt (nach Ergänzung von `[project.plugins.tags]`in der config), aber nicht anklickbar, Übersichtsseite, muss explizit angelegt werden.
-* [Emoji](https://zensical.org/docs/authoring/icons-emojis/): z.B. [Lucide](https://lucide.dev/icons/)  oder FontAwesome
-* Frontmatter `draft: true` ist nur für Blogposts relevant, ansonsten gilt die Konfig (in meinem Fall Ablage in einem `drafts/` Ordner oder Benennung `*.draft.[de.]md`)
+* I am using [`zensical-i18n`](https://github.com/hsandmann/zensical-i18n) for the site to become multilanguage.
+  * everything as usual, english is default.
+  * add that extra pip package and configure [zensical.toml](zensical.toml).
+  * for additional german transaltions of articles, change the file suffix from `.md` to `.de.md` but __keep the same file basename__. 
+	  * a post or page can also be available only in the extra language, but not in the default language
+  * replace the command `[uv run] zensical` by `[uv run] zensical-i18n`, also in the Github workflow
+  * > [!NOTE] frontmatter data is not inherited between languages
+	  * language specific `draft` mode
+	  * language specific `title`, can come from frontmatter or from 1.st H1 heading
+
+### Comments
+* I am using [Giscus](https://giscus.app/) comments, configured in the  [comments partial](overrides/partials/comments.html) and [giscus.json](giscus.json) (interface is always in default language)
+
+### Categories and Tags
+* Category index pages for blog postsare auto generated, you get clickable links in the metadata sidebar in content view of the post.
+* tag links in blogposts are shown (after adding `[project.plugins.tags]` to the config), the index page had to be created manually (this is by design).
+
+### Emoji
+* for [Emojis](https://zensical.org/docs/authoring/icons-emojis/): i like [Lucide](https://lucide.dev/icons/)  oder FontAwesome
 
 ### Drafts
 
