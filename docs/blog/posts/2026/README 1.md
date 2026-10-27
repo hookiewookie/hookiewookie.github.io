@@ -1,39 +1,48 @@
 ---
 date: 2026-10-27
 ---
-# My Blogging decision as of October 2026
+# My Blogging decision and setup as of October 2026
 
 After some research and testing, my markdown powered blog is now powered by [Zensical](https://zensical.org/docs/create-your-site/), the `mkdocs`successor.
 
-## what I've tried tooo, but did not work for me
-* nikola, pelican: markdown links don't work out of the box. I would have to use extra shortcodes for links that work aft
-* mkdocs:1.x - unmaintained, 2.x seems to loose community support because no more plugin support
-* preferring python based tools
+Here I am writing about the Why and How.
+## my needs
+* static site generator (simple & secure, no PHP, not databases)
+* looking good by default
+* easy and uncomplicated usage
+* preferably python powered, although this is not a must
+* I want to use Obsidian for writing: what looks good on my system (or on my mobile), should also look good after publishing
+* multilanguage would be really nice
+* I want to integrate my crochet patterns from [Ravelry](https://www.ravelry.com/designers/hookiewookie) for sale in the future. I know that this works with SSGs because I tested it with mkdocs in the past.
+* I want to concentrate on content. Design will follow, when I have energy for it.
+## what I've tried, but did not work for me
+* nikola, pelican: markdown links don't work out of the box. I would have to use extra shortcodes for links that work after publishing. That makes me tool-dependant and disturbes flow when writing. I want to concentrate on content and not on the tools.
+* mkdocs: 1.x - unmaintained, 2.x seems to loose community support because no more plugin support (but I want i18n, comments, and maybe more in the future)
+* so, I am now working with zensical, an mkdocs fork.
 
-
-## local
+## local setup
 
 ```bash
 # only once, intial setup
 uv venv
 source .venv/bin/activate
 uv pip install -r requirements
-zensical new .
+#only for new sites: #zensical new .
 
 # to upgrade
-uv pip install ...
+uv pip install --upgrade -r requirements.txt
 
 # local server with live reload
 [uv run] zensical serve
-[uv run] zensical-i18n serve [--lang de]
+[uv run] zensical-i18n serve [--lang de] # ✅ linux ❌ windows
 
 # build
 [uv run] zensical build --clean
-[uv run] zensical-i18n build --clean
+[uv run] zensical-i18n build --clean  # ✅ linux ❌ windows
 ```
 
 Hint:
-*  20261025 use command `zensical-i18n` instead of `zensical` for everything, until pugins are fully supported
+*  2026-10 use the command `zensical-i18n` instead of `zensical` for everything, until plugins are fully supported
 
 ## Extra Info
 
