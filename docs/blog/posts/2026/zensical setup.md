@@ -1,11 +1,13 @@
 ---
 date: 2026-10-27
+slug: zensical-setup
 ---
 # My Blogging decision and setup as of October 2026
 
 After some research and testing, my markdown powered blog is now powered by [Zensical](https://zensical.org/docs/create-your-site/), the `mkdocs`successor.
 
 Here I am writing about the Why and How.
+<!-- more -->
 ## my needs
 * static site generator (simple & secure, no PHP, not databases)
 * looking good by default
@@ -41,28 +43,27 @@ uv pip install --upgrade -r requirements.txt
 [uv run] zensical-i18n build --clean  # ✅ linux ❌ windows
 ```
 
-Hint:
 *  2026-10 use the command `zensical-i18n` instead of `zensical` for everything, until plugins are fully supported
 
-## Extra Info
+## Blog Configuration
 
 ### Multilanguage
 
 * I am using [`zensical-i18n`](https://github.com/hsandmann/zensical-i18n) for the site to become multilanguage.
   * everything as usual, english is default.
   * add that extra pip package and configure [zensical.toml](zensical.toml).
-  * for additional german transaltions of articles, change the file suffix from `.md` to `.de.md` but __keep the same file basename__. 
-	  * a post or page can also be available only in the extra language, but not in the default language
-  * replace the command `[uv run] zensical` by `[uv run] zensical-i18n`, also in the Github workflow
-  * > [!NOTE] frontmatter data is not inherited between languages
-	  * language specific `draft` mode
-	  * language specific `title`, can come from frontmatter or from 1.st H1 heading
-
+  * for additional german translations of articles, change the file suffix from `.md` to `.de.md` but __keep the same file basename__. 
+  * a post or page can also be available only in the extra language, but not in the default language
+  * replace the command `[uv run] zensical` by `[uv run] zensical-i18n` &mdash; also in the Github workflow
+  * frontmatter data is not inherited between languages
+	  * language specific `draft` mode and `date`s
+	  * language specific [title](https://zensical.org/docs/authoring/markdown/?h=title#page-title), can come from frontmatter or from first H1 heading
 ### Comments
-* I am using [Giscus](https://giscus.app/) comments, configured in the  [comments partial](overrides/partials/comments.html) and [giscus.json](giscus.json) (interface is always in default language)
+* I am using [Giscus](https://giscus.app/) comments, configured in the  [comments partial](overrides/partials/comments.html) and [giscus.json](giscus.json) (interface is always in default language), enabled `custom_dir = "overrides"` in `[project.theme]` of the config
+* this was the first system I tried, it works out of the box. It is free and open source, so I did not research alternatives.
 
 ### Categories and Tags
-* Category index pages for blog postsare auto generated, you get clickable links in the metadata sidebar in content view of the post.
+* Category index pages for blog posts are auto generated, you get clickable links in the metadata sidebar in content view of the post.
 * tag links in blogposts are shown (after adding `[project.plugins.tags]` to the config), the index page had to be created manually (this is by design).
 
 ### Emoji
@@ -71,10 +72,12 @@ Hint:
 ### Drafts
 
 TLDR:
+
 * for blogposts, put them into a `drafts/` folder containing a `meta.yml` file with  `draft: true` frontmatter. Move them out, when finished.
 * pages: put into a `drafts/` folder or configure a `not_in_nav` matching for hidden access after `build`.
 
 Long:
+
 * in  `[project]` settings: I configured [`draft_docs`](https://zensical.org/docs/setup/basics/?h=draft#draft_docs) to match everything in `draft/` dirs oder with `*.draft.md` names
    * such pages/posts are not published or auto-linked during `zensical build` process, when trying to access them directly via URL, you'll get a 404.
    * `serve` mode:
