@@ -24,6 +24,7 @@ icon: lucide/volleyball
 
 * erste primäre Überschrift gibt den Titel und den slug (welcher mit `slug` property überschreibbar ist)
 * deutschsprachige Artikel brauchen Dateisuffix `.de.md`!
+* [Blog Deploy](https://github.com/steffiland/hookiewookie/actions/workflows/docs.yml)
 <!-- more -->
 
 ## Notes
