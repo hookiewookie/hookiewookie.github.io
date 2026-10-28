@@ -13,5 +13,6 @@
     "overrides/",
     "overrides/*"
   ],
-  "propertiesInDocument": "source"
+  "propertiesInDocument": "source",
+  "settingsPopoutWindow": false
 }

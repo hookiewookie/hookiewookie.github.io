@@ -32,5 +32,7 @@ ehthumbs.db
 **/.obsidian/plugins/*/cache/
 **/.obsidian/plugins/*/.cache/
 **/.obsidian/plugins/*/node_modules/
-# dont sync obsidian-git plugin  . git/info/exclude
-##**/.obsidian/plugins/obsidian-git/
+# dont sync obsidian-git plugin > Ergänzung in .git/info/exclude auf Mobil:
+##**/.obsidian/community-plugins.json
+## --> Liste der aktivierten Community Plugins muss auf Mobile manuell 
+##     gepflegt werden, ihr Einstellungen jedoch werden gesynct.
