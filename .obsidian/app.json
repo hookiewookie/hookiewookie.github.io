@@ -12,5 +12,6 @@
     "site/",
     "overrides/",
     "overrides/*"
-  ]
+  ],
+  "propertiesInDocument": "source"
 }

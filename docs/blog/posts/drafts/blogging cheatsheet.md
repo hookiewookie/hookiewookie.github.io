@@ -20,14 +20,10 @@ icon: lucide/volleyball
 #draft: true # sets draft marker on blog index page
 ---
 
-# Template
+# Blog-Howto
 
-Welcome to our new blog.
-
-This introduction is shown in blog views.
-
-set `draft
-
+* erste primäre Überschrift gibt den Titel und den slug (welcher mit `slug` property überschreibbar ist)
+* deutschsprachige Artikel brauchen Dateisuffix `.de.md`!
 <!-- more -->
 
 ## Notes

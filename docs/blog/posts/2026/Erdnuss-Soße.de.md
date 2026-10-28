@@ -1,9 +1,11 @@
 ---
 categories:
-  - recipe
-date: 2026-10-25
+  - Rezepte
+date: 
+  created: 2026-10-25
+  updated: 2026-10-25
 tags:
-  - recipes
+  - kochen
 ---
 # Erdnuss-Soße
 

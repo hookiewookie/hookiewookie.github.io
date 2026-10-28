@@ -32,3 +32,5 @@ ehthumbs.db
 **/.obsidian/plugins/*/cache/
 **/.obsidian/plugins/*/.cache/
 **/.obsidian/plugins/*/node_modules/
+# dont sync obsidian-git plugin
+**/.obsidian/plugins/obsidian-git/

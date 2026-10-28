@@ -1,5 +1,9 @@
 ---
-date: 2026-10-25
+date: 
+  created: 2026-10-25
+  updated: 2026-10-28
+categories:
+  - misc
 ---
 
 * **ATTENTION!** The Git Plugin is unstable on mobile devices. If your workflow breaks, look [here](https://github.com/Vinzent03/obsidian-git#mobile-support-experimental) for mentioned alternatives, for example [GitSync](https://github.com/ViscousPot/GitSync) App for Android ans iOS.
