@@ -193,3 +193,8 @@ use_git = true   # true by default; git fallback when meta key is missing
 as_creation = "date.created"   # front matter first  
 as_update = "date.updated"     # front matter first, git fallback via use_git
 
+################# other plugins:
+
+# enable {% include-markdown "file.md" %} and {% include "file.txt" %} tags
+# Paths are resolved relative to docs_dir; paths beginning with ./ or ../ are resolved relative to the including file.
+[project.plugins.include-markdown] 
