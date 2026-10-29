@@ -3,7 +3,8 @@ date:
   created: 2026-10-25
   updated: 2026-10-25
 slug: zensical-setup
-category: blogging
+categories: 
+  - blog
 ---
 # My Blogging decision and setup as of October 2026
 
