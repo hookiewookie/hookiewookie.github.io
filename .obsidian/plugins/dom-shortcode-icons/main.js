@@ -234,6 +234,7 @@ var SOURCE_RANK = { custom: 0, icon: 1, emoji: 2 };
 var TOKEN = /^[a-z0-9][a-z0-9_-]*[a-z0-9]$/;
 function buildCandidates(customIds) {
   const names = new Set(customIds.keys());
+  //steffi: lucide vorn dran stehen lassen
   for (const id of (0, import_obsidian.getIconIds)()) names.add(id.startsWith("lucide-") ? id.slice(7) : id);
   if (settings.emoji) for (const k of Object.keys(emoji_default)) names.add(k);
   const out = [];
