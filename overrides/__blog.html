@@ -1,0 +1,4 @@
+{% for post in posts %}  
+  {{ post.content }}  
+  {% if not loop.last %}<hr />{% endif %}  
+{% endfor %}

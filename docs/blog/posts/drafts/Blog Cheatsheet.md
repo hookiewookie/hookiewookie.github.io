@@ -17,11 +17,8 @@ links:
       - Zensical Blog HowTo: https://zensical.org/docs/setup/blog/?h=blog#configuration-zensicaltoml
       - Reference: reference/index.md
 icon: lucide/volleyball
-slug: cheatsheet
 #draft: true # sets draft marker on blog index page
 ---
-
-# Blog-Howto
 
 * erste primäre Überschrift gibt den Titel und den slug (welcher mit `slug` property überschreibbar ist)
 * deutschsprachige Artikel brauchen Dateisuffix `.de.md`!

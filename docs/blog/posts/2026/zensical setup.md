@@ -12,8 +12,8 @@ tags:
 # My Blogging decision and setup as of October 2026
 
 After some research and testing, my blog is now powered by [Zensical](https://zensical.org/docs/create-your-site/), the `mkdocs`successor.
-
 Here I am writing about the Why and How.
+
 <!-- more -->
 ## my needs
 * markdown based static site generator (simple & secure, no PHP, not databases)

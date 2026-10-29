@@ -4,28 +4,22 @@ comments: false
 title: Home
 ---
 
-# 💖lich willkommen!
+# 💖 Hello! 
  
 Welcome to my site. 
 Read my latest [blog posts](blog/) or [subscribe via RSS](feed_rss_updated.xml).
 
+---
+
 <div class="grid cards" markdown>
 
-- **[:octicons-arrow-right-24: BLOG](/blog/)**
+- [:lucide-book-open: **BLOG**](/blog/)
 
 ---
 
-In wenigen Minuten loslegen.
+* :lucide-hammer:  TOOLS
 
-[:octicons-arrow-right-24: BBLLLOOOG](/blog/)
-
-- __API-Referenz__
-
----
-
-Alle Funktionen im Überblick.
-
-[:octicons-arrow-right-24: Referenz](api.md)
+some free browser-based crochet tools for your convenience
 
 </div>
 

@@ -6,9 +6,15 @@ categories:
   - misc
 ---
 
-* **ATTENTION!** The Git Plugin is unstable on mobile devices. If your workflow breaks, look [here](https://github.com/Vinzent03/obsidian-git#mobile-support-experimental) for mentioned alternatives, for example [GitSync](https://github.com/ViscousPot/GitSync) App for Android ans iOS.
+Read here how to:
+
+* mobile usage of obsidian-git plugin using a token
+* mobile git repo sync with a separate GitSync app (Andoird and iOS)
+
+<!-- more -->
 
 ## mobile usage of obsidian-git plugin
+* **ATTENTION!** The Git Plugin is unstable on mobile devices. If your workflow breaks, look [here](https://github.com/Vinzent03/obsidian-git#mobile-support-experimental) for mentioned alternatives, for example [GitSync](https://github.com/ViscousPot/GitSync) App for Android ans iOS.
 * Obsidian: enable community plugins, add the Git ("by Vinzent") community plugin and configure it
 * `echo .obsidian/ >> .gitignore` (a more finegrained exclude might be possible here, to have some of your settings in sync, but I am too busy for testing that at the moment)
 * on your desktop system, copy the whole repository workspace and change the remote from ssh to https
