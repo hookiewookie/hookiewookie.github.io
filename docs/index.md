@@ -17,7 +17,7 @@ Read my latest [blog posts](blog/) or [subscribe via RSS](feed_rss_updated.xml).
 
 ---
 
-* :lucide-hammer:  TOOLS
+* :lucide-hammer:  TOOLS (coming soon)
 
 some free browser-based crochet tools for your convenience
 </div>
