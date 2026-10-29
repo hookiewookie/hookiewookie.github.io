@@ -17,4 +17,4 @@ Welcome to our new blog.
 :fontawesome-regular-face-laugh-wink:
 :lucide-moon:
 
-- `{ % include-markdown './drafts/blogging cheatsheet.md' %}`
+{% include-markdown './drafts/Blog Cheatsheet.md' %}
