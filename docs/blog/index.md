@@ -1,2 +1,5 @@
- Hallo welt
+---
+icon: lucide/book-open
+title: index
+---
  ---

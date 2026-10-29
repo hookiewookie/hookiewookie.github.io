@@ -1,7 +1,7 @@
 ---
 icon: lucide/house
 comments: false
-title: 🏠
+title: Home
 ---
 
 # 💖lich willkommen!
@@ -11,13 +11,13 @@ Read my latest [blog posts](blog/) or [subscribe via RSS](feed_rss_updated.xml).
 
 <div class="grid cards" markdown>
 
-- __BLOG__
+- **[:octicons-arrow-right-24: BLOG](/blog/)**
 
 ---
 
 In wenigen Minuten loslegen.
 
-[:octicons-arrow-right-24: Zum Guide](/blog/)
+[:octicons-arrow-right-24: BBLLLOOOG](/blog/)
 
 - __API-Referenz__
 
