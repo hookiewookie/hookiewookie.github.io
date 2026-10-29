@@ -184,6 +184,7 @@ recipe = "lucide/utensils"
 # see https://squidfunk.github.io/mkdocs-material/plugins/blog/
 post_url_date_format =  "yyyy"
 
+
 # enable RSS and limit it to blog posts 
 [project.plugins.rss]
 match_path = "blog/posts/*"
