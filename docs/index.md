@@ -21,7 +21,7 @@ Read my latest [blog posts](blog/) or [subscribe via RSS](feed_rss_updated.xml).
 
 some free browser-based crochet tools for your convenience
 
-* :lucide-shopping-cart: CHROCHET PATTERN SHOP (coming soon)#d
+* :lucide-shopping-cart: CHROCHET PATTERN SHOP (coming soon)
 </div>
 
 ---
