@@ -20,6 +20,7 @@ edit_uri = "edit/main/docs/"
 # extra_javascript = ["javascripts/extra.js"]
 use_directory_urls = true # only for pages, not valid for blog/posts
 
+exclude_docs = "templates/"
 draft_docs = """
 drafts/
 *.draft.md
