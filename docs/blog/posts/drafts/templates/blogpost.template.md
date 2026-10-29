@@ -8,7 +8,7 @@ tags:
 draft: true
 ---
 
-[blogging-cheatsheet](../blogging-cheatsheet.md)
+[cheatsheet](../../hidden/cheatsheet.md)
 
 <!-- more -->
 

@@ -27,7 +27,7 @@ drafts/
 *.draft.de.md
 """
 
-
+not_in_nav = "hidden/"
 
 [project.plugins.meta] # meta.yml for folder-global frontmatter configuration
 [project.plugins.tags]
