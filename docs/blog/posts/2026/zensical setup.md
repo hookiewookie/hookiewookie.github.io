@@ -5,6 +5,9 @@ date:
 slug: zensical-setup
 categories: 
   - blog
+tags:
+  - zensical
+  - mkdocs
 ---
 # My Blogging decision and setup as of October 2026
 

@@ -60,7 +60,7 @@ features = [
   "navigation.sections",
   # "navigation.tabs",
   # "navigation.tabs.sticky",
-  "navigation.top",
+  "navigation.top", # hohscrollbutton anzeigen
   "navigation.tracking",
   "search.highlight",
   # "toc.follow",
