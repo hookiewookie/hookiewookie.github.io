@@ -1,14 +1,13 @@
 ---
 date: 
-  created: {date}
-  updated: {date}
+  created: {{date}}
+  updated: {{date}}
 categories:
   - misc
 tags:
+  - untagged
 draft: true
 ---
-
-[Blog Cheatsheet](../Blog%20Cheatsheet.md)
 
 <!-- more -->
 
