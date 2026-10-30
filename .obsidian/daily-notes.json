@@ -1,0 +1,5 @@
+{
+  "template": "docs/blog/posts/drafts/templates/blogpost.template.md",
+  "folder": "docs/blog/posts/drafts",
+  "format": "YYYY-MM-DD"
+}
