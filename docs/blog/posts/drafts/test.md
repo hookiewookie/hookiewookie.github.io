@@ -10,6 +10,6 @@ draft: true
 ---
 
 --8<--
-blog/tags.md:7:9
+../README.md:7:9
 ; skip.md
 --8<--
