@@ -146,7 +146,7 @@ pymdownx.tabbed.alternate_style = true
 pymdownx.tabbed.combine_header_slug = true
 pymdownx.tasklist.custom_checkbox = true
 pymdownx.tilde = {}
-zensical.extensions.macros = { module_name = "ravelry", include_yaml = ["ravelry.yaml"]  } # jinja2 und python Macros direkt im Markdown nutzen - für Ravelry Shop
+zensical.extensions.macros = { module_name = "ravelry", include_yaml = ["ravelry.yaml"] } # jinja2 und python Macros direkt im Markdown nutzen - für Ravelry Shop
 
 ######################### multilanguage: zensical-i18n -this may change during next months 20261025
 
