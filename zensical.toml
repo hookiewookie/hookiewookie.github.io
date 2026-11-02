@@ -16,7 +16,7 @@ edit_uri = "edit/main/docs/"
 #  { "Markdown in 5min" = "markdown.md" },
 #]
 
-# extra_css = ["stylesheets/extra.css"]
+extra_css = ["stylesheets/hookiewookie-zensical.css"]
 # extra_javascript = ["javascripts/extra.js"]
 use_directory_urls = true # only for pages, not valid for blog/posts
 
@@ -69,8 +69,10 @@ features = [
   #"content.action.view", # Github Link to View source of this page
 ]
 
-logo = "images/logos/hookie-wookie-icon-128x128.svg"
-favicon = "images/logos/hookie-wookie-icon-128x128.svg"
+logo = "images/logos/hookie-wookie-icon-dark-rounded-128x128.svg"
+favicon = "images/logos/hookie-wookie-icon-dark-rounded-128x128.svg"
+
+
 
 [project.theme.icon]
 logo = "lucide/book-open-text"
