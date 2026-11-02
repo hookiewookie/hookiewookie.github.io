@@ -4,7 +4,7 @@ comments: false
 title: Home 
 ---
 
-![|600](images/logos/hookie-wookie-banner-1200x360.svg){ style="width:100%" }
+![|500](images/logos/hookie-wookie-logo-header-320x80.svg){ style="width:100%" }
 
 Herzlich Willkommen. 
 Schau gern in meinen [Blog](blog/) oder abonniere den [RSS Feed](feed_rss_updated.xml).
