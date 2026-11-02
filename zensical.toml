@@ -69,7 +69,8 @@ features = [
   #"content.action.view", # Github Link to View source of this page
 ]
 
-# logo = "assets/logo.png"
+logo = "images/logos/hookie-wookie-icon-128x128.svg"
+favicon = "images/logos/hookie-wookie-icon-128x128.svg"
 
 [project.theme.icon]
 logo = "lucide/book-open-text"

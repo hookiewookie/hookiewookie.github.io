@@ -9,7 +9,3 @@ tags:
 draft: true
 ---
 
---8<--
-../README.md:7:9
-; skip.md
---8<--
