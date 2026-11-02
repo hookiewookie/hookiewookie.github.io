@@ -40,7 +40,7 @@ uv pip install -r requirements
 #only for new sites: #zensical new .
 
 # to upgrade
-uv pip install --upgrade -r requirements.txt
+uv pip install --upgrade --force-reinstall -r requirements.txt
 
 # local server with live reload
 [uv run] zensical serve

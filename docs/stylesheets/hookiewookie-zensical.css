@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0..1,9..144,100..900,0..100,0..1&display=swap");  
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");  
+
+/* Farbschema figma: Dunkel #482B43, beere: #cb6266, hintergrund vanille: #fff5e9 */
+
+/* Hell-Modus */  
+[data-md-color-scheme="default"] {  
+  --md-primary-fg-color: #482B43;  
+  --md-accent-fg-color:  #cb6266;  
+  --md-default-bg-color: #fff5e9;  
+}  
+  
+/* Dunkel-Modus */  
+[data-md-color-scheme="slate"] {  
+  --md-primary-fg-color: #8a6b84;  /* hellere Variante für Kontrast */  
+  --md-accent-fg-color:  #cb6266;  
+}
+
+/** 
+Font Vorschlag Figma: Fraunces. 
+# zu prüfende Alternativen:
+#   https://fonts.google.com/specimen/Bree+Serif
+#  https://fonts.google.com/specimen/Caprasimo
+#  https://fonts.google.com/specimen/Berkshire+Swash
+**/
+
+
+/* Site-Name oben links in der Kopfzeile */  
+.md-header__title {  
+  font-size: 1.4rem;   /* Standard ist ca. 0.9–1rem */  
+}  
+  
+/* Seitentitel, der beim Scrollen im Header erscheint */  
+[data-md-component="header-topic"] {  
+  font-size: 1.1rem;  
+}
+
+/*
+.md-post__title, .md-header__title,  
+.md-typeset h1, .md-typeset h2, .md-typeset h3,  
+.md-typeset h4, .md-typeset h5, .md-typeset h6,  
+.md-post__title, .grid.cards strong {  
+  font-family: "Fraunces", serif;  
+  font-variation-settings: "SOFT" 60, "WONK" 1;  
+  //font-style auskommentieren zum Vergleichen:
+  //font-style: oblique;   
+}  //*/
+
+.grid.cards a {  
+  text-decoration: none;  
+}
+
+
+.md-post__title, .md-header__title, 
+.md-typeset h1, .md-typeset h2, .md-typeset h3,  
+.md-typeset h4, .md-typeset h5, .md-typeset h6,  
+.md-post__title, .grid.cards strong {  
+  font-family: "Berkshire Swash";  
+    font-weight: 400;  
+  font-style: normal;  
+  font-synthesis: none;  // verhindert Browser-Faux-Bold/-Italic  
+}
+// */
