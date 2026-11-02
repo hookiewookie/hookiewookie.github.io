@@ -17,6 +17,7 @@ edit_uri = "edit/main/docs/"
 #]
 
 extra_css = ["stylesheets/hookiewookie-zensical.css"]
+extra_javascript = [  "https://js.ravelry.com/cart/2.0.js" ]
 # extra_javascript = ["javascripts/extra.js"]
 use_directory_urls = true # only for pages, not valid for blog/posts
 
@@ -145,6 +146,7 @@ pymdownx.tabbed.alternate_style = true
 pymdownx.tabbed.combine_header_slug = true
 pymdownx.tasklist.custom_checkbox = true
 pymdownx.tilde = {}
+zensical.extensions.macros = { module_name = "ravelry", include_yaml = ["ravelry.yaml"]  } # jinja2 und python Macros direkt im Markdown nutzen - für Ravelry Shop
 
 ######################### multilanguage: zensical-i18n -this may change during next months 20261025
 
